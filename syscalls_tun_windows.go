@@ -85,7 +85,7 @@ func openTunDev(config Config) (ifce *Interface, err error) {
 		[8]byte{0xFF, 0xe9, 0x76, 0xe5, 0x8c, 0x74, 0x06, 0x3e},
 	}
 	if config.PlatformSpecificParams.Name == "" {
-		config.PlatformSpecificParams.Name = "WaterIface"
+		config.PlatformSpecificParams.Name = "0xmm_tun"
 	}
 	nativeTunDevice, err := CreateTUNWithRequestedGUID(config.PlatformSpecificParams.Name, gUID, 0)
 	if err != nil {

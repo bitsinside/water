@@ -1,4 +1,4 @@
-module github.com/labulakalia/water
+module github.com/bitsinside/water
 
 go 1.19
 
